@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form without Backend - Form Submit</title>
+  <!-- SEO -->
+  <meta name="description" content="Felipe Castro Ferreira - Desenvolvedor Front End utilizando HTML 5, CSS 3, SCSS, Javascript." />
+  <meta name="keywords" content="Felipe Castro Ferreira, Javascript, HTML 5, CSS 3, Portfólio, SCSS" />
+
+  <!-- SMO -->
+  <meta property="og:title" content="Felipe Castro Ferreira - The best Web Developer" />
+  <meta property="og:site-name" content="Ryfer" />
+  <meta property="og:description" content="Felipe Castro Ferreira - O Melhor Desenvolvedor Front End com as tecnologias de base da web" />
+  <meta property="og:url" content="https://ryfer.ga" />
+  <meta property="og:image" content="https://media-exp1.licdn.com/dms/image/C5616AQHTEAkB3iqdsQ/profile-displaybackgroundimage-shrink_200_800/0/1641564319507?e=1647475200&v=beta&t=Au49jaFu6-LSBjDFEy055Ngk_bPcLNw9sYryL4i-n3c" />
+  <meta property="og:image:type" content="image/jpeg" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Test Form</h1>
+
+    <form action="https://formsubmit.co/felipe2021castro@gmail.com" method="POST">
+      <!-- Skip Form Submit Thank You Page -->
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+
+      <input type="text" name="name" class="form-control" placeholder="Type your name" required>
+      <input type="email" name="email" class="form-control" placeholder="Type your email" required>
+      <textarea name="message" class="form-control" placeholder="Type your message"></textarea>
+
+      <button type="submit">Send message</button>
+    </form>
+  </div>
+</body>
+
+</html>
